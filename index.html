@@ -34,15 +34,20 @@
       var h = new Date().getHours();
       var m = new Date().getMinutes();
       var s = new Date().getSeconds();
-
       var d = new Date().getDate();
       var mm = new Date().getMonth();
       var y = new Date().getFullYear();
 
+      h = (h < 10) ? "0" + h : h
+      m = (m < 10) ? "0" + m : m
+      s = (s < 10) ? "0" + s : s
+      d = (d < 10) ? "0" + d : d
+      mm = (mm < 10) ? "0" + mm : mm
+      y = (y < 10) ? "0" + y : y
+
       hours.innerHTML = h;
       minutes.innerHTML = m;
       seconds.innerHTML = s;
-
       date.innerHTML = d;
       month.innerHTML = mm;
       year.innerHTML = y;
